@@ -1,0 +1,5 @@
+rootProject.name = 'delivery-app'
+include ':user'
+include ':order'
+include ':restaurant'
+include ':rabbit-mq'

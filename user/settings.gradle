@@ -1,0 +1,8 @@
+rootProject.name = 'user'
+
+include ':order'
+include ':rabbit-mq'
+
+// Include user module as a project dependency
+project(':rabbit-mq').projectDir = new File('../rabbit-mq')
+project(':order').projectDir = new File('../order')
