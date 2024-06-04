@@ -63,3 +63,18 @@
     "orderedItems": ["1"]
 }
 </code>
+
+<h2>Once the order is placed, order details will be placed in RabbitMQ queue and the status will change accordingly</h2>
+<span>Order Status</span>
+<code>
+public enum OrderStatus {
+    PLACED,
+    CONFIRMED,
+    PREPARING,
+    READY_TO_DELIVER,
+    DISPATCHED,
+    ACCEPTED,
+    DELIVERED,
+    CANCELLED
+}
+</code>
